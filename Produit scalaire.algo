@@ -1,0 +1,20 @@
+ALGORITHM Scalar_product_algorithm
+VAR
+vector_1, vector_2 : ARRAY_OF_INTEGER;
+i, p : INTEGER
+p:=0
+BEGIN
+    
+    IF (vectot_1.length <> vectot_2.length) THEN
+            write("Error")
+    ELSE
+            FOR i FROM 0 TO vectot_1.length STEP 1  DO
+                p = p + vectot_1[i]*vectot_2[i]
+            END_FOR
+            IF (p=0) THEN
+               write("Orthogonal")
+            ELSE
+                write("non orthogonal")
+            END_IF
+    END_IF
+END
